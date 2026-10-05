@@ -19,7 +19,7 @@ while True:
         date= datetime.strptime(input("What is the spent expensive date (MM/DD/YYYY) ?: "), "%m/%d/%Y") 
         category= input("What category it belongs to ? (Food, Travel, Housing, Books, More.. ): ")
         description= input("More About the Expenses: ")
-        amount= float(input("Enter the amount spent: "))
+        amount= float(input("Enter the amount spent in ₹ : "))
 
         expense= {
             "date": date,
@@ -38,22 +38,22 @@ while True:
         else:
            print("====== details of expenses ======")
            count= 1
-           for each in expensesList:
-                print(f"Expense Number {count} -> Date: {each["date"]}, Category: {each["category"]}, Description: {each["description"]}, Amount: {each["amount"]} ")
+           for eachExpense in expensesList:
+                print(f"Expense Number {count} -> Date: {eachExpense["date"]}, Category: {eachExpense["category"]}, Description: {eachExpense["description"]}, Amount: {eachExpense["amount"]} ")
                 count= count+1
 
 # 3. View Total Spending 
     elif(choice == 3):
         total= 0
-        for every in expensesList:
-            total = total + every["amount"]
+        for Expense in expensesList:
+            total = total + Expense["amount"]
 
-        print("\n TOTAL SPEND = ", total)
+        print(f"\nTOTAL SPEND = ₹{total:.2f}")
 
 #4. EXIT 
     elif(choice == 4):
-        print("THANK YOU FOR USING.... ")
+        print("THANK YOU FOR USING TRACKER.... ")
         break
 
     else:
-        print("INVALID CHOICE. TRY AGAIN")
+        print("INVALID CHOICE. TRY AGAIN WITH NEW CHOICE...")
