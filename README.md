@@ -129,19 +129,19 @@ Expense-Tracker/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/expense-tracker.git
+git clone https://github.com/SAIRAJ-28.git
 ```
 
 ### Step 2: Navigate to the Project Directory
 
 ```bash
-cd expense-tracker
+cd Expense-Tracker-
 ```
 
 ### Step 3: Run the Python Program
 
 ```bash
-python expense_tracker.py
+python tracker code.py
 ```
 
 ---
